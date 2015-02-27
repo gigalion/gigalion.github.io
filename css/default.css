@@ -63,11 +63,14 @@ footer,header,hgroup,menu,nav,section {
    display: block;
 }
 
+
+
 audio,
 canvas,
 video {
    display: inline-block;
 }
+
 
 audio:not([controls]) {
    display: none;
@@ -640,8 +643,8 @@ input[type="checkbox"] { display: inline; }
 .row .four        { width: 33.33333%; }
 .row .five        { width: 41.66667%; }
 .row .six         { width: 50%; }
-.row .seven       { width: 58.33333%; }
-.row .eight       { width: 66.66667%; }
+.row .seven       { width: 62%; }
+.row .eight       { width: 48%; }
 .row .nine        { width: 75%; }
 .row .ten         { width: 83.33333%; }
 .row .eleven      { width: 91.66667%; }
@@ -801,6 +804,8 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
+
+
 
 
 

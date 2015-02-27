@@ -18,6 +18,9 @@
 
 ===================================================================== */
 
+
+
+
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
@@ -33,12 +36,26 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/earth_bg.jpg) no-repeat top center;
+   background-color:#161415;
+   background-image:url(../images/gigaTop.png),url(../images/earth_bg.jpg) ;
+   background-repeat:no-repeat;
+   background-position:top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
+
+/*新規追加*/
+/*#gigaBg{
+	min-height:500px;
+	height:800px;
+	border:solid blue 1px;
+	background:url(../image/gigaTop.png);
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+}*/
+
 
 /* vertically center banner section */
 header:before {
@@ -118,6 +135,7 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 header .scrolldown a:hover { color: #11ABB0; }
+ul#nav li.current a { color:#008EAC; }/*★★★★★★★★★変更*/
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -187,7 +205,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+   background:#FFFFFF;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -198,7 +216,7 @@ ul#nav li.current a { color: #F06000; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color:#00BAFF;
    margin-bottom: 12px;
 }
 #about p {
@@ -411,7 +429,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #2B2B2B;
+   background:#373737;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -423,6 +441,7 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom: 48px;
    color: #95A3A3;
 }
+
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
@@ -518,7 +537,9 @@ ul#nav li.current a { color: #F06000; }
 	position: relative;
 	margin: 0 auto;
 }
-.popup-modal .description-box { padding: 12px 36px 18px 36px; }
+.popup-moda img{width:130%;}
+.popup-modal .description-box { 
+padding: 12px 36px 18px 36px; }
 .popup-modal .description-box h4 {
    font: 15px/24px 'opensans-bold', sans-serif;
 	margin-bottom: 12px;
@@ -633,6 +654,10 @@ call-to-action .button {
 	font-family: 'opensans-semibold', sans-serif; 
 	color: #D8D8D8;
 }
+
+#call_under{
+	padding-top:50px;}
+
 
 /* ------------------------------------------------------------------
 /* g. Testimonials
@@ -788,7 +813,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
+   background:#FFFFFF;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #636363;
@@ -814,7 +839,7 @@ call-to-action .button {
    line-height: 72px;
    text-align: left;
    float: left;
-   color: #ebeeee;
+   color:#3FCBFF;
 }
 
 #contact h4 {
@@ -1004,3 +1029,99 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+#gigaBg h1{
+	width:35%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-10%;
+	margin-top:5%;
+}
+
+#gigaBg h3{
+	font-size:62px;
+	text-shadow:0px 0px 20px #000000;
+	position:absolute;
+	top:50%;
+	margin-top:15%;
+	left:0px;
+}
+#gigaBg h3 span{
+	font-size:120px;
+	font-style:italic;
+	text-shadow:0px 0px 30px #FFD400,5px 5px 0px #6F5C03;
+}
+#gigaBg h3 span.day{
+	font-size:40px;
+	text-shadow:0px 0px 0px #000000;
+	margin-left:20px;
+}
+#gigaBg h4{
+	font-size:26px;
+	color:#FFFFFF;
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	text-shadow:0px 0px 20px #000000;
+	position:absolute;SS
+	top:50%;
+	margin-top:20%;
+	left:50%;
+	margin-left:-25.5%;
+	letter-spacing:3px;
+}
+
+#copy{
+	display:none;
+}
+
+
+
+.nine h3{
+	font-size:18px;
+	color:#00BAFF;
+}
+/* ------------------------------------------------------------------ */
+/* map
+/* ------------------------------------------------------------------ */
+
+#load{
+	background-color:#333;
+	overflow: hidden;
+}
+#map{
+
+	padding-top:40px;
+}
+
+#map span{
+	font-size:14px;
+	color:#CCC;
+}
+
+#map h2{
+	color:#FFF;	
+}
+
+#contact .lead{
+	text-align:left;
+}
+
+
+/* ------------------------------------------------------------------
+/* goods
+/* ------------------------------------------------------------------ */
+#goods{background-color:#CDCDCD;}
+
+#goods h1 {
+   font: 15px/24px 'opensans-semibold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 48px;
+   color:rgba(0,137,255,1.00);
+}
+
+#goods {
+   /*background:#373737;*/
+   padding-top: 90px;
+   padding-bottom: 60px;
+}
