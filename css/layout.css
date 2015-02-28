@@ -255,6 +255,8 @@ ul#nav li.current a { color: #F06000; }
 
 #resume {
    background: #fff;
+  /* background-image:url(../images/11_2.gif);*/
+   background-position:bottom 150px;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
@@ -1125,3 +1127,9 @@ footer .social-links li:first-child { margin-left: 0; }
    padding-top: 90px;
    padding-bottom: 60px;
 }
+
+/*#home {
+   border:solid pink 5px;
+   padding-top: 90px;
+   padding-bottom: 60px;
+}*/
