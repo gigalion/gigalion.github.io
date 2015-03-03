@@ -41,16 +41,42 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/loop_js/loop.js"></script>
 <script src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.yurayura.js"></script>
 
 <!--追記GOODS-->
 <script src="goods/modernizr.custom.63321.js"></script>
 <script src="goods/jquery.catslider.js"></script>
-		<script>
-			$(function() {
-				$( '#mi-slider' ).catslider();
-			});
-		</script>
+<script>
+$(function() {
+	$( '#mi-slider' ).catslider();
+});
+$(function(){
+    $('#roadShow').yurayura( {
+        'move' : 5,
+        'delay' : 100,
+        'duration' : 1000
+    } )
+});
+$(function(){
+	$("#roadShow").click(function(){
+		$(this).fadeOut(1000);
+	});
+});
+</script>
+<style type="text/css">
 
+#roadShow{
+	width:80%;
+	/*background-color:red;*/
+	color:white;
+	position:absolute;
+	top:-5px;
+	left:0px;
+	z-index:1000;
+	/*display:none;*/
+}
+
+</style>
 
 <!-- Favicons
 	================================================== -->
@@ -62,6 +88,11 @@
 <!-- Header
    ================================================== -->
 <header id="home">
+
+<div id="roadShow">
+<h2><a class="smoothscroll" href="#load"><img src="images/notice2.png"></a></h2>
+</div>
+
   <nav id="nav-wrap"> <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a> <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
     <ul id="nav" class="nav">
       <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
@@ -71,10 +102,10 @@
       <li><a class="smoothscroll" href="#call-to-action">Movie</a></li>
       <li><a class="smoothscroll" href="#goods">Goods</a></li>
       <li><a class="smoothscroll" href="#contact">SNS</a></li>
-      <li><a class="smoothscroll" href="#load">Access</a></li>
+      <li><a class="smoothscroll" href="#load">Showtime・Access</a></li>
     </ul><!-- end #nav --> 
   </nav><!-- end #nav-wrap -->
-  
+   
   <div class="row banner">
       <div id="gigaBg">
       <div id="copy">
@@ -96,6 +127,11 @@
             <h4 id="gigah4">Appearance by di the ten thousand.</h4>
          </div><!-- pcLogo -->
       </div><!-- banner-text --> 
+      
+<!--<div id="roadShow">
+<h2><a class="smoothscroll" href="#load"><img src="images/notice2.png"></a></h2>
+</div>-->
+      
     </div><!--gigaBg-->
   </div><!-- row banner -->
   <p class="scrolldown"> <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a> </p>
@@ -538,7 +574,36 @@
 <section id="load">
   <div class="row">
     <div id="access">
+    
       <div id="map">
+      <h2 id="map01">ShowTime</h2>
+      <div id="showtime">
+              <table>
+  <tr>
+    <td  class="time">第1部</td>
+	<td class="time02">9:30~10:30</td>
+  </tr>
+  <tr>
+    <td  class="time">第2部</td>
+    <td class="time02">10:30~11:30</td>
+  </tr>
+  <tr>
+      <td  class="time">第3部</td>
+    <td class="time02">11:30~12:30</td>
+    </tr>
+    <tr>
+        <td  class="time">第4部</td>
+    <td class="time02">12:30~13:30</td>
+    </tr>
+    <tr>
+        <td  class="time">第5部（最終）</td>
+    <td class="time02">13:30~14:30</td>
+    </tr>
+</table>
+
+ <p id="notice">10分前までに071教室にお越し下さい。</p>
+ 
+            </div>
         <h2 id="map01">Access</h2>
         <iframe width="100%" height="350px"frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.co.jp/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E6%A2%85%E7%94%B0%EF%BC%93%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91+HAL%E5%A4%A7%E9%98%AA&amp;aq=0&amp;oq=HAL&amp;sll=35.733136,137.850952&amp;sspn=5.67971,11.969604&amp;brcurrent=3,0x6000e68cf7e8c80d:0x7699caad295963c2,0&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;iwloc=A&amp;ll=34.699875,135.493032&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
         <br />

@@ -31,6 +31,7 @@ body { background: #0f0f0f; }
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
+
 header {
    position: relative;
    height: 800px;
@@ -42,8 +43,25 @@ header {
    background-position:top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
+	
+   -webkit-animation: cloudMove 10s infinite;
+   -moz-animation: cloudMove 10s infinite;
+
    text-align: center;
    overflow: hidden;
+}
+
+
+
+@-webkit-keyframes cloudMove {
+    0% {background-position: 51% 0, 50% 0;}
+    50% {background-position: 50% 0, 52% 0;}
+    100% {background-position: 51% 0, 50% 0;}
+}
+@-moz-keyframes cloudMove {
+    0% {background-position: 51% 0, 50% 0;}
+    50% {background-position: 50% 0,52% 0;}
+    100% {background-position: 51% 0, 50% 0;}
 }
 
 /*新規追加*/
@@ -1107,6 +1125,42 @@ footer .social-links li:first-child { margin-left: 0; }
 	text-align:left;
 }
 
+
+
+#time{font-size:18px;}
+#notice{ color:#E6E6E6;font-size:18px;
+background-color:#FF8C00;
+padding:8px;
+text-align:center;
+font-weight:bold;}
+#showtime{width:100%;}
+#showtime table{
+	width:100%;
+	max-width:800px;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+#showtime p{font-size:16px;}
+#showtime table {
+	background-color:#FFFFFF;
+	font-size:18px;
+	border-collapse: collapse;
+}
+#showtime td {
+	width:150px;
+	text-align:center;
+	border: solid 1px #6D6D6D;;
+	padding: 0.7em;
+}
+.time{
+	background-color:#F67A01;
+	font-weight:580;
+	color:#F9F9F9;}
+.time02{
+	background-color:#F5F5F5;
+	color:#807B7B;
+	font-weight:bold;
+}
 
 /* ------------------------------------------------------------------
 /* goods

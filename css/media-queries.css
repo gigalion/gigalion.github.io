@@ -9,6 +9,10 @@
 #deviceLogo{
 	   display:none;
    }
+   
+#roadShow{
+	display:none;
+}
 
 /* screenwidth less than 1920px
 --------------------------------------------------------------------- */
@@ -172,6 +176,9 @@
    #deviceLogo{
 	   display:none;
    }
+   #roadShow{
+	display:block;
+}
 
    header .banner-text h1 {
 	   width:35%;
@@ -236,6 +243,11 @@
       #pcLogo{
 	   display:none;
    }
+   
+      #roadShow{
+	display:block;
+}
+
 
 #deviceLogo{
 	display:block;
@@ -399,6 +411,12 @@ header #gigaBg #deviceLogo .subCopy{
 /*   header{
 	   border:solid 1px yellow;
    }*/
+   
+      #roadShow{
+	display:block;
+}
+
+   
    #nav-wrap {
       font: 12px 'opensans-bold', sans-serif;
       background: transparent !important;
@@ -730,6 +748,12 @@ header #gigaBg #deviceLogo .subCopy{
   -------------------------------------------------------------------------- */
 
 @media screen and (max-width: 480px) {
+
+   #roadShow{
+	display:block;
+}
+
+
 
    /* mobile navigation
    -------------------------------------------------------------------- */
