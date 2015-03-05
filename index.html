@@ -34,7 +34,7 @@
 <link rel="stylesheet" href="css/media-queries.css">
 
 <!--追記google font-->
-<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<!--<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>-->
 <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
 
 
@@ -101,7 +101,9 @@ CountdownTimer.prototype =  {
         var me = this;  
   
             if( ( this.timeLimit - today ) > 0 ){  
-            timer = '<div class="timerZone"><h6>Step away from GIGALION start ..</h6><h1>' + this.addZero( hours ) + ':' + this.addZero( mins ) + ':'+ this.addZero( secs ) + ':'  + this.addZero( milis )+'</h1></div>';   
+            timer = '<div class="timerZone"><h6>Step away from GIGALION start ..</h6><h1>' + this.addZero( hours ) + ':' + this.addZero( mins ) + ':'+ this.addZero( secs ) +'</h1></div>';  
+			           // timer = '<div class="timerZone"><h6>Step away from GIGALION start ..</h6><h1>' + this.addZero( hours ) + ':' + this.addZero( mins ) + ':'+ this.addZero( secs ) + ':'  + this.addZero( milis )+'</h1></div>';   
+ 
             //timer = '初回上映まであと<br />' + days + '日' + this.addZero( hours ) + '時間' + this.addZero( mins ) + '分'+ this.addZero( secs ) + '秒'  + this.addZero( milis )   
 
             this.elem.innerHTML = timer;  
@@ -141,33 +143,11 @@ CountdownTimer.prototype =  {
 }
 
 .timer{  
-    /*text-align:center;*/  
     width:100%;  
-    /*margin:30px auto 0;  
-    padding:10px 0;*/  
-    /*font-size:1.5em;*/  
     color:#fff;  
-    /*text-shadow:1px 1px 1px #ccc; */ 
-    /*font-weight:bold;*/  
-    /*line-height:40px;*/  
-    /*border:1px solid #ef007c;*/
-	/*font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;*/  
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #ef007c), color-stop(0.00, #ff5db1));  
-    background: -webkit-linear-gradient(top, #ff5db1 0%, #ef007c 100%);  
-    background: -moz-linear-gradient(top, #ff5db1 0%, #ef007c 100%);  
-    background: -o-linear-gradient(top, #ff5db1 0%, #ef007c 100%);  
-    background: -ms-linear-gradient(top, #ff5db1 0%, #ef007c 100%);  
-    background: linear-gradient(top, #ff5db1 0%, #ef007c 100%);  
-    shadow: 2px 2px 16px 7px #ddd, inset 0px 0px 1px 1px #f5add2;     
-    -moz-box-shadow: 2px 2px 16px 7px #ddd, inset 0px 0px 1px 1px #f5add2;     
-    box-shadow: 2px 2px 16px 7px #ddd, inset 0px 0px 1px 1px #f5add2;*/  
 	border:solid red 1px;
-	background-color:red;
-	/*position:absolute;
-	top:0px;
-	left:0px;*/
+	background-color:#E97200;
 	z-index:2000;
-	/*opacity:0.7;*/
 	display:none;
 }
 
@@ -234,7 +214,8 @@ CountdownTimer.prototype =  {
 	/*font-size:1.0rem;*/
 	color:#FFF;
 	text-align:center;
-	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	/*font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;*/
+	font-family: 'Orbitron', sans-serif;
 	letter-spacing:5px;
 }
 </style>
@@ -265,7 +246,7 @@ function test2(){
    ================================================== -->
 <div id="randing">
 <div class="randingNo1">
-<h1>　さあ、時が来た</h1>
+<h1>Full Burst</h1>
 <!--<h2>Now , the time has come</h2>-->
 </div>
 
